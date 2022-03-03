@@ -4,9 +4,15 @@ const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 const { evm, abi } = compiledFactory;
 
+let privatePhrase = '';
+let endpoint = '';
+
+debug.assert(!!privatePhrase, 'should have private phrase!');
+debug.assert(!!endpoint, 'should have endpoint from infura!');
+
 const provider = new HDWalletProvider(
-  'soup assault cross van beyond assist practice barely thing cloth trap rug',
-  'https://rinkeby.infura.io/v3/15c1d32581894b88a92d8d9e519e476c'
+  privatePhrase,
+  endpoint
 );
 
 const web3 = new Web3(provider);
