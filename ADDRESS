@@ -1,0 +1,3 @@
+0x7602a59db752bdac15030eAFf53479C448E66be8
+
+[{"inputs":[{"internalType":"uint256","name":"minimum","type":"uint256"}],"name":"createCampaign","outputs":[],"stateMutability":"payable","type":"function","payable":true,"signature":"0xa3303a75"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"deployedCampaigns","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x339d50a5"},{"inputs":[],"name":"getCampaigns","outputs":[{"internalType":"address[]","name":"","type":"address[]"}],"stateMutability":"view","type":"function","constant":true,"signature":"0xa6b03633"}]
