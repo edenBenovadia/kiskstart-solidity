@@ -1,5 +1,6 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const Web3 = require('web3');
+const assert = require('assert');
 
 const compiledFactory = require('./build/CampaignFactory.json');
 const { evm, abi } = compiledFactory;
@@ -7,8 +8,8 @@ const { evm, abi } = compiledFactory;
 let privatePhrase = '';
 let endpoint = '';
 
-debug.assert(!!privatePhrase, 'should have private phrase!');
-debug.assert(!!endpoint, 'should have endpoint from infura!');
+assert.ok(!!privatePhrase, 'should have private phrase!');
+assert.ok(!!endpoint, 'should have endpoint from infura!');
 
 const provider = new HDWalletProvider(
   privatePhrase,
